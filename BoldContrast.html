@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>VELAN CREATION - Bold Contrast</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@600&display=swap" rel="stylesheet" />
+<style>
+  * {
+    margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth;
+  }
+  html, body {
+    font-family: 'Poppins', sans-serif;
+    background: #000;
+    color: #fff;
+    line-height: 1.55;
+  }
+  header {
+    background: #111;
+    padding: 3rem 1rem 4rem 3rem;
+    box-shadow: 0 0 18px #ff1a1a;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  header img {
+    width: 140px;
+    border-radius: 15px;
+    border: 4px solid #ff1a1a;
+  }
+  header h1 {
+    font-family: 'Anton', sans-serif;
+    font-weight: 700;
+    font-size: 3.75rem;
+    text-transform: uppercase;
+    color: #ff1a1a;
+    text-shadow: 0 0 10px #ff5050;
+    flex-grow: 1;
+  }
+  header .tagline {
+    color: #ff4444bb;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-left: auto;
+  }
+  .contact-info {
+    width: 93%;
+    max-width: 1020px;
+    margin: 4rem auto 3.2rem auto;
+    display: flex;
+    justify-content: space-evenly;
+    background: #222;
+    padding: 1.2rem 2rem;
+    border-radius: 42px;
+    box-shadow: 0 6px 25px #ff3434bb;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #ff4a4a;
+  }
+  .contact-info span {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .contact-info svg {
+    fill: #ff1a1a;
+    width: 22px;
+    height: 22px;
+  }
+  main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px 4rem 20px;
+  }
+  h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1.75rem;
+    border-left: 12px solid #ff1a1a;
+    padding-left: 18px;
+    color: #ff1a1a;
+  }
+  .about-section {
+    background: #222;
+    border-radius: 30px;
+    padding: 3rem 3.5rem;
+    color: #f7d2d2;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    text-align: justify;
+    box-shadow: inset 0 0 20px #ff3232b0;
+    margin-bottom: 3.5rem;
+  }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    justify-content: center;
+    margin-bottom: 3.8rem;
+  }
+  .card {
+    background: #111;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px #ff2c2c80;
+    width: 280px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-12px) scale(1.07);
+    box-shadow: 0 25px 75px #ff4a4aaa;
+    z-index: 99;
+  }
+  .card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+    display: block;
+    filter: brightness(0.95);
+  }
+  .card:hover img {
+    filter: brightness(1.1);
+  }
+  .caption {
+    color: #ff4b4b;
+    font-size: 1.05rem;
+    text-align: center;
+    font-weight: 700;
+    padding: 1rem 0;
+    letter-spacing: 0.8px;
+    text-shadow: 0 1px 5px #bb2a2a;
+  }
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 4rem;
+  }
+  button {
+    background: #ff1a1a;
+    border: none;
+    border-radius: 45px;
+    padding: 18px 55px;
+    box-shadow: 0 0 30px #ff5050bb;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.35rem;
+    color: #fff;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  button:hover {
+    background: #ff5050;
+    box-shadow: 0 0 50px #ff7f7fcc;
+    transform: scale(1.06);
+  }
+  footer {
+    background: #1a0303;
+    color: #ff6c6c;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.15rem;
+    letter-spacing: 1.4px;
+    padding: 3rem 1rem;
+  }
+  @media (max-width: 860px) {
+    .contact-info {
+      flex-direction: column;
+      gap: 20px;
+      padding: 2rem 2rem;
+    }
+    .btn-container {
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <img src="logo.jpeg" alt="Velan Creation Logo" />
+  <h1>VELAN CREATION</h1>
+  <div class="tagline">Cutting Job Work (Auto Cutter) & Marker Making - Tirupur</div>
+</header>
+<div class="contact-info">
+  <span>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="#ff1a1a" viewBox="0 0 24 24"><path d="M12 2c4.418 0 8 3.582 8 8 0 4.282-3.583 9.336-8 12-4.417-2.664-8-8-8-12 0-4.418 3.582-8 8-8z"/></svg>
+    2/241 C, Karukkan Thottam, Ettiveerampalayam, Perumanallur, Tirupur
+  </span>
+  <span>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="#ff1a1a" viewBox="0 0 24 24"><path d="M21.6 3.4l-6.6 6.6c-1.5-.8-3.3-1.3-5.1-1.3-1.1 0-2.3.3-3.3.8l-3.1-3.1-3.4 3.4 3.1 3.1c-.3.6-.4 1.3-.4 2 0 3.1 2.9 5.7 6.7 6.2.8.2 1.7.3 2.5.3 1.1 0 2.3-.3 3.3-.8l3.1 3.1 3.4-3.4-3.1-3.1c.3-.6.4-1.3.4-2-.1-3.1-3-5.7-6.7-6.2z"/></svg>
+    surender@velancreation.in
+  </span>
+  <span>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="#ff1a1a" viewBox="0 0 24 24"><path d="M21 16.37v4.07a2.56 2.56 0 0 1-2.68 2.56A19.45 19.45 0 0 1 2.5 17a2.58 2.58 0 0 1 2.66-2.58h4.1v3a1 1 0 0 0 1.63.78L15 14a1 1 0 0 0 .63-1.15l-1-5.8a1 1 0 0 0-1-1 1 1 0 0 0-.87.54L10 10a18.84 18.84 0 0 0-5.45-5.4v3.34a1 1 0 0 0 .5.84l2.54 1.67a1 1 0 0 1 .41.6L10 16z"/></svg>
+    9944752505
+  </span>
+</div>
+<main>
+  <section class="about-section">
+    <h2>About Velan Creation</h2>
+    <p>Velan Creation is a cutting-edge garment cutting and marker making service based in Tirupur. Equipped with the latest auto cutter and spreader machines, we deliver precision, speed, and quality finishing for bulk garment orders and custom markers.</p>
+  </section>
+  <section class="about-section">
+    <h2>Our Workshop & Machinery</h2>
+    <div class="gallery">
+      <div class="card">
+        <img src="setup1.jpeg" alt="Workshop Setup" />
+        <div class="caption">Modern workshop setup designed for precision</div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2>Our Machines</h2>
+    <div class="gallery">
+      <div class="card">
+        <img src="spreader1.jpeg" alt="Fabric Spreader" />
+        <div class="caption">High-end fabric spreader</div>
+      </div>
+      <div class="card">
+        <img src="cutter1.jpeg" alt="Auto Cutter" />
+        <div class="caption">Advanced auto cutter for speed and accuracy</div>
+      </div>
+      <div class="card">
+        <img src="cutter2.jpeg" alt="Auto Cutter Side" />
+        <div class="caption">Precision optimized cutter machine</div>
+      </div>
+      <div class="card">
+        <img src="card.jpeg" alt="Business Card" />
+        <div class="caption">Velan Creation Business Card</div>
+      </div>
+    </div>
+  </section>
+  <section class="about-section">
+    <h2>Why Choose Velan Creation?</h2>
+    <p>We specialize in premium garment cutting job work with the latest auto cutters and expert marker making. Our Tirupur facility guarantees precision, quick turnaround, professional finishing and bulk order capacity. Trusted by garment units across Tirupur for quality and on-time delivery.</p>
+  </section>
+  <div class="btn-container">
+    <button onclick="window.location.href='mailto:surender@velancreation.in'">Contact Us</button>
+    <button onclick="window.location.href='tel:9944752505'">Call Now</button>
+  </div>
+</main>
+<footer>
+  &copy; 2025 Velan Creation. Bold Contrast Style.
+</footer>
+</body>
+</html>

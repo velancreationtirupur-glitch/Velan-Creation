@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>VELAN CREATION - Vintage Heritage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto&display=swap" rel="stylesheet" />
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: #f8f5f0;
+    color: #5c4635;
+    line-height: 1.6;
+  }
+  header {
+    background: #a98268;
+    padding: 3rem 2rem 3rem;
+    text-align: center;
+    color: #fff5e1;
+    box-shadow: 0 6px 25px #a97c4caa;
+  }
+  header img {
+    width: 120px;
+    border-radius: 15px;
+    border: 3px solid #d6c299;
+    margin-bottom: 18px;
+  }
+  header h1 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 3.6rem;
+    letter-spacing: 3px;
+    font-style: italic;
+  }
+  header .tagline {
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 5px;
+    color: #e8ddb4;
+  }
+  .contact-info {
+    max-width: 900px;
+    margin: 3rem auto 2rem auto;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    background: #f1e6d1;
+    padding: 1.2rem 3rem;
+    border-radius: 50px;
+    box-shadow: inset 0 0 40px #d3b87a80;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #70583b;
+  }
+  .contact-info span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .contact-info svg {
+    fill: #70583b;
+    width: 20px;
+    height: 20px;
+  }
+  main {
+    max-width: 900px;
+    margin: auto;
+    padding: 0 15px 3rem 15px;
+  }
+  h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 1.75rem;
+    border-bottom: 4px solid #d1b274;
+    padding-bottom: 8px;
+    color: #7a5a2b;
+  }
+  section.about {
+    background: #fff6e5;
+    padding: 2.8rem 3rem;
+    margin-bottom: 3rem;
+    border-radius: 32px;
+    color: #6b523a;
+    box-shadow: 0 7px 28px #bb9f5c88;
+    font-size: 1.1rem;
+    font-style: italic;
+    text-align: justify;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 28px;
+    margin-bottom: 40px;
+  }
+  .card {
+    border-radius: 32px;
+    overflow: hidden;
+    background: #f6eee2;
+    box-shadow: 0 10px 30px #cdba8e80;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  .card:hover {
+    box-shadow: 0 18px 56px #decc9fbd;
+    transform: translateY(-10px) scale(1.04);
+    z-index: 10;
+  }
+  .card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+  }
+  .caption {
+    padding: 1rem 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #957b54;
+    letter-spacing: 0.5px;
+  }
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 3.5rem;
+    margin-top: 3rem;
+  }
+  button {
+    background: #aa8e4b;
+    border: none;
+    border-radius: 40px;
+    padding: 15px 55px;
+    color: #f9f8f1;
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 25px #bca85a88;
+    transition: all 0.3s ease;
+  }
+  button:hover {
+    background: #cdb45e;
+    box-shadow: 0 7px 33px #d4be658c;
+    color: #4c4127;
+    transform: scale(1.07);
+  }
+  footer {
+    background: #7a623f;
+    color: #ffeaa4;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 1.1px;
+  }
+  @media (max-width: 768px) {
+    .contact-info {
+      flex-direction: column;
+      gap: 1.8rem;
+      padding: 1.4rem 2rem;
+    }
+    .btn-container {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="logo.jpeg" alt="Velan Creation Logo" />
+  <h1>VELAN CREATION</h1>
+  <div class="tagline">Cutting Job Work (Auto Cutter) & Marker Making - Tirupur</div>
+</header>
+
+<div class="contact-info">
+  <span>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="#70583b" viewBox="0 0 24 24"><path d="M12 2c4.418 0 8 3.582 8 8 0 4.282-3.583 9.336-8 12-4.417-2.664-8-8-8-12 0-4.418 3.582-8 8-8z"/></svg>
+    2/241 C, Karukkan Thottam, Ettiveerampalayam, Perumanallur, Tirupur
+  </span>
+  <span>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="#70583b" viewBox="0 0 24 24"><path d="M21.6 3.4l-6.6 6.6c-1.5-.8-3.3-1.3-5.1-1.3-1.1 0-2.3.3-3.3.8l-3.1-3.1-3.4 3.4 3.1 3.1c-.3.6-.4 1.3-.4 2 0 3.1 2.9 5.7 6.7 6.2.8.2 1.7.3 2.5.3 1.1 0 2.3-.3 3.3-.8l3.1 3.1 3.4-3.4-3.1-3.1c.3-.6.4-1.3.4-2-.1-3.1-3-5.7-6.7-6.2z"/></svg>
+    surender@velancreation.in
+  </span>
+  <span>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="#70583b" viewBox="0 0 24 24"><path d="M21 16.37v4.07a2.56 2.56 0 0 1-2.68 2.56A19.45 19.45 0 0 1 2.5 17a2.58 2.58 0 0 1 2.66-2.58h4.1v3a1 1 0 0 0 1.63.78L15 14a1 1 0 0 0 .63-1.15l-1-5.8a1 1 0 0 0-1-1 1 1 0 0 0-.87.54L10 10a18.84 18.84 0 0 0-5.45-5.4v3.34a1 1 0 0 0 .5.84l2.54 1.67a1 1 0 0 1 .41.6L10 16z"/></svg>
+    9944752505
+  </span>
+</div>
+
+<main>
+  <section class="about">
+    <h2>About Velan Creation</h2>
+    <p>Velan Creation is a well-established garment cutting and marker making service based in Tirupur. Equipped with modern auto cutter and spreader machines, we offer precise, prompt, and professional services to garment manufacturers throughout Tamil Nadu. Our skilled team ensures quality and timely delivery for bulk orders and sample marker making.</p>
+  </section>
+
+  <section class="about workshop-section">
+    <h2>Our Workshop & Machinery</h2>
+    <div class="gallery">
+      <div class="card">
+        <img src="setup1.jpeg" alt="Workshop Setup" />
+        <div class="caption">Precision cutting workshop optimized for excellence</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Our Machines</h2>
+    <div class="gallery">
+      <div class="card">
+        <img src="spreader1.jpeg" alt="Fabric Spreader" />
+        <div class="caption">Advanced fabric spreading machine</div>
+      </div>
+      <div class="card">
+        <img src="cutter1.jpeg" alt="Auto Cutter" />
+        <div class="caption">High precision auto cutter</div>
+      </div>
+      <div class="card">
+        <img src="cutter2.jpeg" alt="Auto Cutter Side" />
+        <div class="caption">Optimized cutter designed for speed & accuracy</div>
+      </div>
+      <div class="card">
+        <img src="card.jpeg" alt="Business Card" />
+        <div class="caption">Velan Creation Business Card</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2>Why Choose Velan Creation?</h2>
+    <p>We specialize in premium garment cutting job work with the most advanced auto cutters and expert marker making. Our Tirupur facility guarantees precision, quick turnaround times, professional finishing, and bulk order capacity. Trusted by many garment units across Tirupur for reliable service and on-time delivery.</p>
+  </section>
+
+  <div class="btn-container">
+    <button onclick="window.location.href='mailto:surender@velancreation.in'">Contact Us</button>
+    <button onclick="window.location.href='tel:9944752505'">Call Now</button>
+  </div>
+</main>
+
+<footer>
+  &copy; 2025 Velan Creation - Vintage Heritage Style.
+</footer>
+
+</body>
+</html>
